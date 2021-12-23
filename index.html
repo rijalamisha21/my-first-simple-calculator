@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: auto;
+        margin: 20px;
+        text-align: center;
+        padding: 2px;
+        color: rgb(49, 48, 48);
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        transform: translate(-25);
+        box-shadow: 0px 7px 10px 4px #eaeaea;
+      }
+
+      .arithmetic {
+        margin: 15px;
+      }
+      .label-top {
+        /* text-align: center; */
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 30px;
+        color: rgb(88, 88, 182);
+        margin: 27px;
+      }
+      .label {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: rgb(141, 140, 140);
+        font-size: 15px;
+        margin: 5px;
+      }
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        /* width: 49%;
+            margin-left: 85px; */
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      #num1,
+      #num2 {
+        color: rgb(170, 162, 162);
+        margin: 5px;
+        padding: 2px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button {
+        border-radius: 50%;
+        text-decoration: none;
+        margin: 8px;
+        padding: 20px;
+        background-color: rgb(238, 238, 238);
+        border: none;
+      }
+
+      .result {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="operands">
+        <label class="label-top" for="number">Calculator</label>
+
+        <div class="wrap">
+          <label class="label" for="number">First Number</label>
+          <input id="num1" type="text" />
+          <label class="label" for="number">Second Number</label>
+          <input id="num2" type="text" value="" />
+        </div>
+      </div>
+
+      <div class="arithmetic">
+        <button id="add">+</button>
+        <button id="sub">-</button>
+        <button id="mul">*</button>
+        <button id="div">/</button>
+      </div>
+      <div class="result">
+        <span id="result">Total</span>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
